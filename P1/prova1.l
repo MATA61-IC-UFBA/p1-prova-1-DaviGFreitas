@@ -13,6 +13,8 @@ int yylex();
 
 [ \t\n]+ 
 
+"//"[^\n]*
+
 \"[^\"\n]*\"            { return STRING; }
 
 "print"                 { return PRINT; }
